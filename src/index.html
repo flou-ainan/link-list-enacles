@@ -2,7 +2,6 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bona+Nova:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Prata&family=Radley:ital@0;1&display=swap" rel="stylesheet">
-
 <div class="app">
   <div class="cabeca">
     <div class="bloco01 bloco"></div>
@@ -19,15 +18,15 @@
     </div>
     <div class="links-section flex-col-center">
       <ul class="link-list flex-col-center">
-        <a href="">
-          <li>Acessar Catálogo</li>
-        </a>
-        <a href="">
-          <li>Fale Comigo - Whatsapp</li>
-        </a>
-        <a href="">
-          <li>Aprenda Aqui - Meus Cursos</li>
-        </a>
+        <li onclick='go("")'>
+          Acessar Catálogo
+        </li>
+        <li onclick='go("")'>
+          Fale Comigo - Whatsapp
+        </li>
+        <li onclick='go("")'>
+          Aprenda Aqui - Meus Cursos
+        </li>
       </ul>
     </div>
   </div>
@@ -39,3 +38,8 @@
     </svg>
   </div>
 </div>
+<script>
+  function go(link){
+    window.location.href = link
+  }
+</script>

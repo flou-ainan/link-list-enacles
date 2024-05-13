@@ -65,23 +65,31 @@ body{
 }
 
 .link-list{
-  overflow-y: scroll;
+  overflow-y: auto;
   overflow-x: hidden;
   width: 100%;
   max-width: 500px;
   list-style: none;
   padding-left: 0;
   gap: 10px;
+  padding-top: 3px;
 }
-.link-list > li{
+.link-list li{
   width: 80%;
   margin: 0px 40px;
   background: #a37b5b;
   padding: 1vh 20px;
   border-radius: 40px;
   font-size: 4.4vw;
+  cursor: pointer;
 }
-
+.link-list li:hover{
+  transform: translateY(-2px);
+}
+.link-list li:active{
+  transform: translateY(-1px);
+  filter: brightness(1.1);
+}
 .bloco {
   height: 10px;
   width: 100%;  
@@ -145,7 +153,7 @@ body{
 }
 
 @media (max-height: 340px) {
-  .link-list > li {
+  .link-list li {
      font-size: 3vh;
   }
   .perfil > img {
@@ -159,7 +167,7 @@ body{
     margin: 3px;
     font-size: 1.8vh;
   }
-  .link-list > li{
+  .link-list li{
     padding: 1vh 20px;
   }
 
