@@ -1,0 +1,166 @@
+* {
+  box-sizing: border-box;
+}
+
+body{
+  font-family: "Prata", Serif;
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  background-color: #293b49;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 280px;
+  overflow: hidden;
+}
+
+.cabeca {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.corpo {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.perfil {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #daccbc;
+  max-height: 40vh;
+}
+
+.perfil > img {
+  width: 20vh;
+}
+
+.perfil > .titulo {
+  margin-top: 3px;
+  font-size: 3.1vh;
+}
+.perfil > .sub-titulo {
+  margin: 5px;
+  font-size: 2.2vh;
+}
+.links-section{
+  width: 100%;
+  height: 40vh;
+}
+
+.link-list{
+  overflow-y: scroll;
+  overflow-x: hidden;
+  width: 100%;
+  max-width: 500px;
+  list-style: none;
+  padding-left: 0;
+  gap: 10px;
+}
+.link-list > li{
+  width: 80%;
+  margin: 0px 40px;
+  background: #a37b5b;
+  padding: 1vh 20px;
+  border-radius: 40px;
+  font-size: 4.4vw;
+}
+
+.bloco {
+  height: 10px;
+  width: 100%;  
+}
+.bloco01{
+  background-color: #794722;
+}
+.bloco02{
+  background-color: #a86f44;
+}
+.bloco03{
+  background-color: #b29786;
+}
+.bloco04{
+  background-color: #586d80;
+}
+.bloco05{
+  background-color: #445565;
+}
+
+.rodape{
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  max-height: 90px;
+  height: 12vh;
+}
+
+.img-rodape {
+  height: 100%;
+  padding: 1vh;
+}
+
+
+/* Auxiliars */
+
+.flex-col-center{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+/* non little screens */
+@media (min-width: 340px) {
+  .link-list > li {
+     font-size: 12pt;
+  }
+  .perfil > img {
+    width: 180px;
+  }
+  .perfil > .titulo {
+    margin-top: 3px;
+    font-size: 16pt;
+  }
+  .perfil > .sub-titulo {
+    margin: 5px;
+    font-size: 12pt;
+  }
+
+}
+
+@media (max-height: 340px) {
+  .link-list > li {
+     font-size: 3vh;
+  }
+  .perfil > img {
+    width: 18vh;
+  }
+  .perfil > .titulo {
+    margin-top: 2px;
+    font-size: 3vh;
+  }
+  .perfil > .sub-titulo {
+    margin: 3px;
+    font-size: 1.8vh;
+  }
+  .link-list > li{
+    padding: 1vh 20px;
+  }
+
+}
