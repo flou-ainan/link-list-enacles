@@ -37,6 +37,7 @@ body{
   align-items: center;
   justify-content: space-around;
   max-width: 600px;
+  margin-bottom: 12vh;
 }
 
 .perfil {
@@ -121,7 +122,9 @@ body{
   justify-content: flex-end;
   max-height: 90px;
   height: 12vh;
-  margin-bottom: 5vh;
+  margin-bottom: 1vh;
+  position: fixed;
+  bottom: 0;
 }
 
 .img-rodape {
