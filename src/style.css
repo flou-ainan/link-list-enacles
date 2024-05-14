@@ -121,6 +121,7 @@ body{
   justify-content: flex-end;
   max-height: 90px;
   height: 12vh;
+  margin-bottom: 5vh;
 }
 
 .img-rodape {
