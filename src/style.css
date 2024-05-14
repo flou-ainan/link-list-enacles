@@ -20,6 +20,8 @@ body{
   justify-content: space-between;
   min-width: 280px;
   overflow: hidden;
+  background-image: url("public/pattern.webp");
+  background-size: 160px;
 }
 
 .cabeca {
@@ -139,6 +141,13 @@ body{
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.shadow {
+  box-shadow: 1px 1px 2px #0005;
+}
+.t-shadow {
+  text-shadow: 1px 1px 2px #0005;
 }
 
 
